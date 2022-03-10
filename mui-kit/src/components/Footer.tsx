@@ -1,22 +1,15 @@
-import React from "react";
-import { styled } from '@mui/system';
+import * as React from "react";
+import FooterPageLinks from "./FooterPageLinks";
+import FooterLogoSocials from "./FooterLogoSocials";
+import Stack from "@mui/material/Stack";
 
-
-
-const FooterStyle = styled('div')(({theme}) => ({
-    backgroundColor: theme.palette.secondary,
-    width: "100%",
-  }));
-
-const Footer = () => {
-  
-    return (
-     
-     <footer>Footer</footer>
-     
-     
-    )
-  };
-
-
-export default Footer;
+export default function Footer() {
+  return (
+    <div>
+      <Stack direction="row" spacing={10}>
+        <FooterLogoSocials />
+        <FooterPageLinks />
+      </Stack>
+    </div>
+  );
+}

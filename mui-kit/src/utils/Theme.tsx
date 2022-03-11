@@ -1,17 +1,14 @@
 import { BoltRounded } from "@mui/icons-material";
 import { createTheme } from "@mui/material/styles";
+import Colors from "./Colors";
+import Typography from "./Typography";
 
 const theme = createTheme({
   palette: {
-    primary: {
-      main: "#FFFFFFAA",
-    },
-    secondary: {
-      main: "#1A73E8",
-    },
+    ...Colors,
   },
   typography: {
-    fontSize: 12,
+    ...Typography,
   },
 });
 

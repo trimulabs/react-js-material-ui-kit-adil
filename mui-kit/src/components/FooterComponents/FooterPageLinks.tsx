@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Button, Stack } from "@mui/material";
 import { Typography } from "@mui/material";
+import theme from "../../utils/Theme";
 
 export default function FooterPageLinks() {
   return (

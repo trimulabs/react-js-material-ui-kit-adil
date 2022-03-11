@@ -1,10 +1,11 @@
 import React from "react";
-import background from "../assets/bg.jpeg";
+import background from "./../../assets/bg.jpeg";
 
 const styles = {
   paperContainer: {
-    height: "500px",
+    height: "540px",
     width: "100%",
+    opacity: 1,
   },
 };
 

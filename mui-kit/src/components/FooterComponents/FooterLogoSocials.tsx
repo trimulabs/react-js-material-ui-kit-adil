@@ -5,7 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Stack from "@mui/material/Stack";
 import IconButton from "@mui/material/IconButton";
-import Logo from "../assets/logo";
+import Logo from "../../assets/logo";
 import { Typography } from "@mui/material";
 
 const FooterLogoSocials = () => {

@@ -1,8 +1,7 @@
-import React from "react";
 import background from "./../../assets/bg.jpeg";
 
 const styles = {
-  paperContainer: {
+  BG: {
     height: "540px",
     width: "100%",
     opacity: 1,
@@ -10,7 +9,7 @@ const styles = {
 };
 
 const HeaderBG = () => {
-  return <img src={background} style={styles.paperContainer} />;
+  return <img src={background} style={styles.BG} />;
 };
 
 export default HeaderBG;

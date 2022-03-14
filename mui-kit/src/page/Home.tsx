@@ -1,16 +1,20 @@
 import Header from "../components/HeaderComponents/Header";
 import Footer from "../components/FooterComponents/Footer";
-import TechButtons from "../components/AvailableSectionComponents/TechButtons";
-import SocialButtons from "../components/AvailableSectionComponents/SocialButtons";
 import DownloadSection from "../components/DownloadSectionComponents/DownloadSection";
+import AvailableSection from "../components/AvailableSectionComponents/AvailableSection";
+import CompanyLogos from "../components/CompanySection/CompanyLogos";
+import { Paper } from "@mui/material";
+import Stars from "../components/ReviewSection/StarComponent";
 
 function Home() {
   return (
     <div className="App">
       <Header />
-      <DownloadSection />
-      <TechButtons />
-      <SocialButtons />
+      <Paper elevation={3}>
+        <CompanyLogos />
+        <DownloadSection />
+        <AvailableSection />
+      </Paper>
       <Footer />
     </div>
   );

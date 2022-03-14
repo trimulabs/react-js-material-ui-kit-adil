@@ -3,7 +3,7 @@ export default {
     black: "#344767",
   },
   primary: {
-    main: "#FFFFFFCC",
+    main: "#FFFFFF",
   },
   secondary: {
     main: "#1A73E8",
@@ -29,6 +29,6 @@ export default {
     dark: "#b21d22",
   },
   facebook: {
-    main: "3b5998",
+    main: "#3b5998",
   },
 };

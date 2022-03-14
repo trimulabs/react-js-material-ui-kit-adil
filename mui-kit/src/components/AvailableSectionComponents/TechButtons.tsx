@@ -1,32 +1,44 @@
 import React from "react";
-import Angular from "../../assets/angular";
-import Bootstrap from "../../assets/bootstrap";
-import ReactLogo from "../../assets/reactlogo";
-import Sketch from "../../assets/sketch";
-import Tailwind from "../../assets/tailwind";
-import Vue from "../../assets/vue";
+import Angular from "../../assets/angular.jpeg";
+import Bootstrap from "../../assets/bootstrap5.jpeg";
+import ReactLogo from "../../assets/react.jpeg";
+import Sketch from "../../assets/sketch.jpeg";
+import Tailwind from "../../assets/icon-tailwind.jpeg";
+import Vue from "../../assets/vue.jpeg";
 import { Grid } from "@mui/material";
+
+const style = {
+  ButtonStyle: {
+    height: "56px",
+    width: "56px",
+    opacity: "1",
+  },
+  GridStyle: {
+    justifyContent: "center",
+    marginBottom: "96px",
+  },
+};
 
 const TechButtons = () => {
   return (
-    <Grid container>
+    <Grid container style={style.GridStyle}>
       <Grid>
-        <Bootstrap style={{ height: "56px", width: "56px" }} />
+        <img src={Bootstrap} style={style.ButtonStyle} />
       </Grid>
       <Grid>
-        <Tailwind style={{ height: "56px", width: "56px" }} />
+        <img src={Tailwind} style={style.ButtonStyle} />
       </Grid>
       <Grid>
-        <Vue style={{ height: "56px", width: "56px" }} />
+        <img src={Vue} style={style.ButtonStyle} />
       </Grid>
       <Grid>
-        <Angular style={{ height: "56px", width: "56px" }} />
+        <img src={Angular} style={style.ButtonStyle} />
       </Grid>
       <Grid>
-        <ReactLogo style={{ height: "56px", width: "56px" }} />
+        <img src={ReactLogo} style={style.ButtonStyle} />
       </Grid>
       <Grid>
-        <Sketch style={{ height: "56px", width: "56px" }} />
+        <img src={Sketch} style={style.ButtonStyle} />
       </Grid>
     </Grid>
   );

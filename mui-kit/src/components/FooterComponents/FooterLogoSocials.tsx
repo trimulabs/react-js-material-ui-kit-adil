@@ -8,9 +8,16 @@ import IconButton from "@mui/material/IconButton";
 import Logo from "../../assets/logo";
 import { Typography } from "@mui/material";
 
+const style = {
+  stackStyle: {
+    paddingTop: "24px",
+    marginBottom: "24px",
+  },
+};
+
 const FooterLogoSocials = () => {
   return (
-    <Stack spacing={2}>
+    <Stack spacing={2} style={style.stackStyle}>
       <IconButton>
         <Logo style={{ height: "32px", width: "32px" }} />
       </IconButton>

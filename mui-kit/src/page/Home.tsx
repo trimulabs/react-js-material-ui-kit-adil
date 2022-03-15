@@ -4,13 +4,28 @@ import DownloadSection from "../components/DownloadSectionComponents/DownloadSec
 import AvailableSection from "../components/AvailableSectionComponents/AvailableSection";
 import CompanyLogos from "../components/CompanySection/CompanyLogos";
 import { Paper } from "@mui/material";
-import Stars from "../components/ReviewSection/StarComponent";
+import Review from "../components/ReviewSection/ReviewSection";
+import Trusted from "../components/TrustedSection/TrustedSection";
+import FeaturesMain from "../components/FirstSection/FeaturesMain";
 
+const style = {
+  paperStyle: {
+    marginTop: "-60px",
+    marginLeft: "24px",
+    marginRight: "24px",
+    borderRadius: "10px",
+    padding: "16px",
+    //opacity: "0.95",
+  },
+};
 function Home() {
   return (
     <div className="App">
       <Header />
-      <Paper elevation={3}>
+      <Paper elevation={3} style={style.paperStyle}>
+        <FeaturesMain />
+        <Trusted />
+        <Review />
         <CompanyLogos />
         <DownloadSection />
         <AvailableSection />

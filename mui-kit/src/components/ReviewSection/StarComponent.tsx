@@ -1,7 +1,7 @@
 import { Stack } from "@mui/material";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
 
-function Stars() {
+function Stars(props: any) {
   return (
     <Stack direction="row" spacing={0}>
       <StarRoundedIcon />

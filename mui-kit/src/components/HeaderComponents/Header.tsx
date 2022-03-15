@@ -1,35 +1,48 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import HeaderBG from "./HeaderBG";
 import NavBar from "./NavBar";
 import styled from "@emotion/styled";
 import theme from "../../utils/Theme";
+import bg from "../../assets/bg.jpeg";
 
-const TextStyle = styled(Typography)({
+const TextStyle = styled(Box)({
   justifyContent: "center",
-  verticalAlign: "center",
+  display: "flex",
   alignItems: "center",
-  textAlign: "center",
-  marginRight: "auto",
-  marginLeft: "auto",
-  flexDirection: "row",
-  flexWrap: "wrap",
+  flexDirection: "column",
+  margin: "auto",
+  height: "100%",
+});
+
+const Container = styled("div")({
+  backgroundImage: `url(${bg})`,
+  backgroundSize: "cover",
+  width: "100%",
+  height: "615px",
 });
 
 const Header = () => {
   return (
-    <div>
+    <Container>
       <NavBar />
       <TextStyle>
-        <Typography variant="h1" color={theme.palette.primary.main}>
+        <Typography
+          variant="h1"
+          color={theme.palette.primary.main}
+          sx={{ marginBottom: "16px" }}
+        >
           Material Kit 2 React
         </Typography>
-        <Typography variant="h4" color={theme.palette.primary.main}>
+        <Typography
+          variant="h4"
+          color={theme.palette.primary.main}
+          sx={{ width: "40%" }}
+        >
           Free & Open Source Web UI Kit built over ReactJS & MUI. Join over 1.6
           million developers around the world.
         </Typography>
       </TextStyle>
-      <HeaderBG />
-    </div>
+    </Container>
   );
 };
 export default Header;

@@ -20,6 +20,7 @@ const style = {
     color: "rgb(52, 71, 103)",
     boxShadow: "none",
     cursor: "pointer",
+    textTransform: "none" as "none",
   },
   navbar: {
     display: "flex",

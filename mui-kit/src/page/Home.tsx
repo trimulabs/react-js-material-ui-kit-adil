@@ -7,6 +7,7 @@ import { Paper } from "@mui/material";
 import Review from "../components/ReviewSection/ReviewSection";
 import Trusted from "../components/TrustedSection/TrustedSection";
 import FeaturesMain from "../components/FirstSection/FeaturesMain";
+import DocumentationMain from "../components/DocumentationSectionComponents/DocumentationMain";
 
 const style = {
   paperStyle: {
@@ -24,6 +25,7 @@ function Home() {
       <Header />
       <Paper elevation={3} style={style.paperStyle}>
         <FeaturesMain />
+        <DocumentationMain />
         <Trusted />
         <Review />
         <CompanyLogos />

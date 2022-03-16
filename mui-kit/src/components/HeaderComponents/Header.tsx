@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import HeaderBG from "./HeaderBG";
 import NavBar from "./NavBar";
 import styled from "@emotion/styled";
 import theme from "../../utils/Theme";

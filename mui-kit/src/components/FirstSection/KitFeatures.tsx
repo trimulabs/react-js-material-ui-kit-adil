@@ -53,7 +53,7 @@ function KitFeatures() {
               will find everything inside our documentation.
             </Typography>
           </Stack>
-          <Stack>
+          <Stack sx={{ marginTop: "50px" }}>
             <PriceChangeRoundedIcon style={style.icon} />
             <Typography style={style.heading}>Save Time & Money</Typography>
             <Typography style={style.body}>
@@ -71,7 +71,7 @@ function KitFeatures() {
               user interfaces.
             </Typography>
           </Stack>
-          <Stack>
+          <Stack sx={{ marginTop: "50px" }}>
             <DevicesRoundedIcon style={style.icon} />
             <Typography style={style.heading}>Fully Responsive</Typography>
             <Typography style={style.body}>

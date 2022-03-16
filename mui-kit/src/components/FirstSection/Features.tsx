@@ -48,7 +48,15 @@ const style = {
 
 function Features() {
   return (
-    <Stack direction="row" sx={{ paddingTop: "16px", paddingBottom: "16px" }}>
+    <Stack
+      direction="row"
+      sx={{
+        paddingTop: "16px",
+        paddingBottom: "16px",
+        marginLeft: "100px",
+        marginRight: "100px",
+      }}
+    >
       <Stack sx={{ padding: "16px" }}>
         <Typography style={style.number}>70+</Typography>
         <Typography style={style.title}>Coded Elements</Typography>

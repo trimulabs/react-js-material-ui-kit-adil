@@ -21,6 +21,7 @@ const style = {
     boxShadow: "none",
     cursor: "pointer",
     textTransform: "none" as "none",
+    padding: "0 8px 0 8px",
   },
   navbar: {
     display: "flex",

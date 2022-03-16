@@ -2,7 +2,7 @@ import DownloadButton from "./DownloadNowButton";
 import Stack from "@mui/material/Stack";
 import { Typography } from "@mui/material";
 import styled from "@emotion/styled";
-import Wave from "../../assets/waves-white";
+import Wave from "../../assets/waves.jpg";
 
 const StackStyle = styled(Stack)({
   justifyContent: "center",
@@ -16,9 +16,17 @@ const StackStyle = styled(Stack)({
   paddingBottom: "96px",
 });
 
+const Container = styled("div")({
+  backgroundImage: `url(${Wave})`,
+  backgroundSize: "cover",
+  width: "100%",
+  height: "400px",
+  borderRadius: "15px",
+});
+
 export default function DownloadSection() {
   return (
-    <div>
+    <Container>
       <StackStyle>
         <Stack>
           <Typography variant="h3">Do you love this awesome</Typography>
@@ -34,6 +42,6 @@ export default function DownloadSection() {
           <DownloadButton />
         </Stack>
       </StackStyle>
-    </div>
+    </Container>
   );
 }

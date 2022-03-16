@@ -13,8 +13,8 @@ const SocialButtonsStyle = styled(Button)({
   boxShadow: "none",
   minHeight: "20px",
   minWidth: "64px",
-  padding: "0.625rem 1.5rem",
-  marginLeft: "auto",
+  //padding: "0.625rem 1.5rem",
+  margin: "auto",
 });
 
 const style = {

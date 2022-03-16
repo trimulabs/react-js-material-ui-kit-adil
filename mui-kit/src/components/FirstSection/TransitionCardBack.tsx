@@ -1,6 +1,5 @@
-import TouchAppIcon from "@mui/icons-material/TouchApp";
-import { Box, Paper, Stack, styled, Typography } from "@mui/material";
-import background from "../../assets/rotating-card-bg-front.jpeg";
+import { Box, Button, styled, Typography } from "@mui/material";
+import background from "../../assets/rotating-card-bg-back.jpeg";
 import theme from "../../utils/Theme";
 
 const Container = styled("div")({
@@ -24,33 +23,33 @@ const TextStyle = styled(Box)({
   padding: "20px",
 });
 
-const style = {
-  icon: {
-    color: "#FFFFFF",
-    margin: "16px 0 24px 0",
-  },
-};
+const ButtonStyle = styled(Button)({
+  borderRadius: "10px",
+  color: theme.palette.primary.main,
+});
 
 interface Props {
   setIsFlipped: (isFlipped: boolean) => void;
 }
 
-const CardFront = ({ setIsFlipped }: Props) => {
+function CardBack({ setIsFlipped }: Props) {
   return (
-    <Container onMouseOver={() => setIsFlipped(true)}>
+    <Container onMouseOut={() => setIsFlipped(false)}>
       <TextStyle>
-        <TouchAppIcon style={style.icon} />
-
         <Typography variant="h3" sx={{ marginBottom: "10px" }}>
-          Feel the Material Kit
+          Discover More
         </Typography>
-        <Typography variant="body1" sx={{ fontWeight: "300" }}>
-          All the MUI components that you need in a development have been
-          re-design with the new look.
+        <Typography
+          variant="body1"
+          sx={{ fontWeight: "300", marginBottom: "10px" }}
+        >
+          You will save a lot of time going from prototyping to full-functional
+          code because all elements are implemented
         </Typography>
+        <Button variant="contained">Start with header</Button>
       </TextStyle>
     </Container>
   );
-};
+}
 
-export default CardFront;
+export default CardBack;

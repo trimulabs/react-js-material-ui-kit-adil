@@ -98,6 +98,7 @@ function Review() {
           </Typography>
           <Button
             variant="outlined"
+            color="primary"
             startIcon={<AccessTimeRoundedIcon />}
             disabled
           >

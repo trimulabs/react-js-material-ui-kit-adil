@@ -8,6 +8,7 @@ import Review from "../components/ReviewSection/ReviewSection";
 import Trusted from "../components/TrustedSection/TrustedSection";
 import FeaturesMain from "../components/FirstSection/FeaturesMain";
 import DocumentationMain from "../components/DocumentationSectionComponents/DocumentationMain";
+import DesignBlocks from "../components/CollectionSectionComponents/CollectionSectionMain";
 
 const style = {
   paperStyle: {
@@ -25,6 +26,7 @@ function Home() {
       <Header />
       <Paper elevation={3} style={style.paperStyle}>
         <FeaturesMain />
+        <DesignBlocks />
         <DocumentationMain />
         <Trusted />
         <Review />

@@ -16,6 +16,7 @@ const style = {
     fontSize: "14px",
   },
   buttonStyle: {
+    textColor: "black",
     backgroundColor: "transparent",
     outline: "0",
     border: "0",
@@ -39,52 +40,52 @@ export default function FooterPageLinks() {
         <Button variant="text" color="secondary" style={style.buttonStyle}>
           About Us
         </Button>
-        <Button variant="text" color="secondary">
+        <Button variant="text" color="secondary" style={style.buttonStyle}>
           Freebies
         </Button>
-        <Button variant="text" color="secondary">
+        <Button variant="text" color="secondary" style={style.buttonStyle}>
           Premium Tools
         </Button>
-        <Button variant="text" color="secondary">
+        <Button variant="text" color="secondary" style={style.buttonStyle}>
           Blog
         </Button>
       </Stack>
       <Stack style={style.stackStyle}>
         <Typography>Resources</Typography>
-        <Button variant="text" color="secondary">
+        <Button variant="text" color="secondary" style={style.buttonStyle}>
           Illustrations
         </Button>
-        <Button variant="text" color="secondary">
+        <Button variant="text" color="secondary" style={style.buttonStyle}>
           Bits & Snippets
         </Button>
-        <Button variant="text" color="secondary">
+        <Button variant="text" color="secondary" style={style.buttonStyle}>
           Affiliate Program
         </Button>
       </Stack>
       <Stack style={style.stackStyle}>
         <Typography>Help & Support</Typography>
-        <Button variant="text" color="secondary">
+        <Button variant="text" color="secondary" style={style.buttonStyle}>
           Contact Us
         </Button>
-        <Button variant="text" color="secondary">
+        <Button variant="text" color="secondary" style={style.buttonStyle}>
           Knowledge Center
         </Button>
-        <Button variant="text" color="secondary">
+        <Button variant="text" color="secondary" style={style.buttonStyle}>
           Custom Development
         </Button>
-        <Button variant="text" color="secondary">
+        <Button variant="text" color="secondary" style={style.buttonStyle}>
           Sponsorship
         </Button>
       </Stack>
       <Stack style={style.stackStyle}>
         <Typography>Legal</Typography>
-        <Button variant="text" color="secondary">
+        <Button variant="text" color="secondary" style={style.buttonStyle}>
           Terms & Conditions
         </Button>
-        <Button variant="text" color="secondary">
+        <Button variant="text" color="secondary" style={style.buttonStyle}>
           Privacy Policy
         </Button>
-        <Button variant="text" color="secondary">
+        <Button variant="text" color="secondary" style={style.buttonStyle}>
           Licenses (EULA)
         </Button>
       </Stack>

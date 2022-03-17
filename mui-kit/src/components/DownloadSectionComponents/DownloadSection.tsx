@@ -19,8 +19,8 @@ const StackStyle = styled(Stack)({
 const Container = styled("div")({
   backgroundImage: `url(${Wave})`,
   backgroundSize: "cover",
-  width: "100%",
   height: "400px",
+  width: "100%",
   borderRadius: "15px",
 });
 

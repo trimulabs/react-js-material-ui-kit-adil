@@ -1,10 +1,9 @@
 import { Stack, Typography } from "@mui/material";
-
+import theme from "../../utils/Theme";
 const style = {
   number: {
     justifyContent: "center",
     textAlign: "center" as "center",
-    fontFamily: '"Roboto Slab", sans-serif',
     fontSize: "3rem",
     lineHeight: "1.25",
     fontWeight: "700",
@@ -19,7 +18,6 @@ const style = {
     justifyContent: "center",
     textAlign: "center" as "center",
     margin: "16px 0px 8px",
-    fontFamily: "Roboto, Helvetica, Arial, sans-serif",
     fontSize: "1.25rem",
     lineHeight: "1.375",
     fontWeight: "700",
@@ -32,7 +30,6 @@ const style = {
     justifyContent: "center",
     textAlign: "center" as "center",
     margin: "0px",
-    fontFamily: "Roboto, Helvetica, Arial, sans-serif",
     fontSize: "1rem",
     fontWeight: "300",
     lineHeight: "1.6",
@@ -44,19 +41,21 @@ const style = {
     marginRight: "auto",
     marginLeft: "auto",
   },
+  stackStyle: {
+    display: "flex",
+    paddingTop: "16px",
+    paddingBottom: "16px",
+    marginLeft: "100px",
+    marginRight: "100px",
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
+    },
+  },
 };
 
 function Features() {
   return (
-    <Stack
-      direction="row"
-      sx={{
-        paddingTop: "16px",
-        paddingBottom: "16px",
-        marginLeft: "100px",
-        marginRight: "100px",
-      }}
-    >
+    <Stack direction="row" style={style.stackStyle}>
       <Stack sx={{ padding: "16px" }}>
         <Typography style={style.number}>70+</Typography>
         <Typography style={style.title}>Coded Elements</Typography>

@@ -15,9 +15,11 @@ const style = {
     marginTop: "-60px",
     marginLeft: "24px",
     marginRight: "24px",
-    borderRadius: "10px",
     padding: "16px",
-    //opacity: "0.95",
+    background: "rgba(255, 255, 255, 0.8)",
+    color: "rgb(52, 71, 103)",
+    borderRadius: "0.75rem",
+    backdropFilter: "saturate(200%) blur(30px)",
   },
 };
 function Home() {

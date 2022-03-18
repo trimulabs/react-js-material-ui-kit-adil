@@ -1,4 +1,3 @@
-import React from "react";
 import theme from "../../utils/Theme";
 import { AppBar, Button, Typography } from "@mui/material";
 import { Toolbar } from "@mui/material";
@@ -8,28 +7,19 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import CalendarViewDaySharpIcon from "@mui/icons-material/CalendarViewDaySharp";
 import ArticleSharpIcon from "@mui/icons-material/ArticleSharp";
 import DashboardSharpIcon from "@mui/icons-material/DashboardSharp";
-import KeyboardArrowDownSharpIcon from "@mui/icons-material/KeyboardArrowDownSharp";
 
 const style = {
   tabs: {
     marginLeft: "auto",
-    display: "flex",
     alignItems: "baseline",
     opacity: "0.6",
     background: "transparent",
     color: "rgb(52, 71, 103)",
     boxShadow: "none",
-    cursor: "pointer",
-    textTransform: "none" as "none",
     padding: "0 8px 0 8px",
+    display: "flex",
   },
   navbar: {
-    display: "flex",
-    webkitBoxPack: "justify",
-    justifyContent: "space-between",
-    webkitBoxAlign: "center",
-    alignItems: "center",
-    opacity: "1",
     background: "transparent",
     color: "rgb(52, 71, 103)",
     boxShadow: "none",
@@ -39,7 +29,7 @@ const style = {
     marginRight: "24px",
     marginBottom: "16px",
     marginLeft: "24px",
-    width: "calc(100% - 48px)",
+    width: "calc(100% - 80px)",
     left: "0px",
     zIndex: "3",
     opacity: "1",
@@ -49,8 +39,6 @@ const style = {
     backdropFilter: "saturate(200%) blur(30px)",
   },
   heading: {
-    margin: "0px",
-    fontFamily: "Roboto, Helvetica, Arial, sans-serif",
     fontSize: "0.875rem",
     lineHeight: "1.5",
     opacity: "1",
@@ -61,11 +49,6 @@ const style = {
     fontWeight: "700",
   },
   downloadButton: {
-    outline: "0px",
-    border: "0px",
-    margin: "0px",
-    cursor: "pointer",
-    verticalAlign: "middle",
     textDecoration: "none",
     fontFamily: "Roboto, Helvetica, Arial, sans-serif",
     letterSpacing: "0.02857em",
@@ -82,17 +65,9 @@ const style = {
     fontSize: "0.75rem",
     backgroundImage:
       "linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232))",
-    backgroundPositionY: "initial",
-    backgroundRepeat: "initial",
-    backgroundAttachment: "initial",
-    backgroundOrigin: "initial",
-    backgroundClip: "initial",
-    backgroundColor: "initial",
     color: "rgb(255, 255, 255)",
     boxShadow:
       "rgba(26, 115, 232, 0.15) 0rem 0.1875rem 0.1875rem 0rem, rgba(26, 115, 232, 0.2) 0rem 0.1875rem 0.0625rem -0.125rem, rgba(26, 115, 232, 0.15) 0rem 0.0625rem 0.3125rem 0rem",
-    backgroundSize: "150% !important",
-    backgroundPositionX: "25% !important",
   },
   githubButton: {
     marginLeft: "8px",
@@ -104,7 +79,6 @@ const style = {
     background: "transparent",
     color: "rgb(52, 71, 103)",
     boxShadow: "none",
-    cursor: "pointer",
   },
 };
 
@@ -123,7 +97,6 @@ function NavBar() {
       <Toolbar style={style.navbar}>
         <Typography
           variant="h5"
-          noWrap
           component="div"
           color={theme.palette.common.black}
           sx={{ mr: 2, display: { xs: "none", md: "flex" } }}

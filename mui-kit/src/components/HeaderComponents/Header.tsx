@@ -17,7 +17,11 @@ const Container = styled("div")({
   backgroundImage: `url(${bg})`,
   backgroundSize: "cover",
   width: "100%",
-  height: "615px",
+  minHeight: "75vh",
+  display: "grid",
+  placeItems: "center",
+  alignItems: "center",
+  justifyItems: "center",
 });
 
 const Header = () => {

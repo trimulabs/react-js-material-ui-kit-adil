@@ -3,6 +3,7 @@ import FlagRoundedIcon from "@mui/icons-material/FlagRounded";
 import PrecisionManufacturingRoundedIcon from "@mui/icons-material/PrecisionManufacturingRounded";
 import AppsRoundedIcon from "@mui/icons-material/AppsRounded";
 import { Typography, Stack, Button, Paper, styled } from "@mui/material";
+import Colors from "../../utils/Colors";
 
 const style = {
   stackStyle: {
@@ -12,7 +13,7 @@ const style = {
     padding: "28px 24px 24px 24px",
   },
   iconStyle: {
-    color: "#1A73E8",
+    color: Colors.secondary.main,
   },
   heading: {
     display: "block",
@@ -37,7 +38,7 @@ const DocumentationCards = () => {
           }}
         >
           <Stack direction="row" spacing={2}>
-            <FlagRoundedIcon sx={{ color: "#FFFFFF" }} />
+            <FlagRoundedIcon sx={{ color: Colors.primary.main }} />
             <Stack>
               <Typography style={style.heading} sx={{ color: "#FFFFFF" }}>
                 Getting Started
@@ -65,7 +66,6 @@ const DocumentationCards = () => {
                 style={style.heading}
                 sx={{ color: "rgb(52, 71, 103)" }}
               >
-                {" "}
                 Plugins
               </Typography>
               <Typography>

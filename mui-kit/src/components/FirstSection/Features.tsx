@@ -1,9 +1,15 @@
 import { Stack, Typography } from "@mui/material";
 import theme from "../../utils/Theme";
+import styled from "@emotion/styled";
+import { Box } from "@mui/material";
+
+const TextStyle = styled(Box)({
+  justifyContent: "center",
+  textAlign: "center" as "center",
+});
+
 const style = {
   number: {
-    justifyContent: "center",
-    textAlign: "center" as "center",
     fontSize: "3rem",
     lineHeight: "1.25",
     fontWeight: "700",
@@ -13,10 +19,10 @@ const style = {
     letterSpacing: "-0.125px",
     zIndex: "1",
     margin: "0px",
+    marginRight: "auto",
+    marginLeft: "auto",
   },
   title: {
-    justifyContent: "center",
-    textAlign: "center" as "center",
     margin: "16px 0px 8px",
     fontSize: "1.25rem",
     lineHeight: "1.375",
@@ -25,19 +31,17 @@ const style = {
     verticalAlign: "unset",
     color: "rgb(52, 71, 103)",
     letterSpacing: "-0.125px",
+    marginRight: "auto",
+    marginLeft: "auto",
   },
   body: {
-    justifyContent: "center",
-    textAlign: "center" as "center",
     margin: "0px",
     fontSize: "1rem",
     fontWeight: "300",
     lineHeight: "1.6",
     opacity: "1",
-    verticalAlign: "unset",
     color: "rgb(123, 128, 154)",
-    letterSpacing: "-0.125px",
-    width: "60%",
+    width: "70%",
     marginRight: "auto",
     marginLeft: "auto",
   },
@@ -45,9 +49,7 @@ const style = {
     display: "flex",
     paddingTop: "16px",
     paddingBottom: "16px",
-    marginLeft: "100px",
-    marginRight: "100px",
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
     },
   },

@@ -22,7 +22,7 @@ const style = {
 const TechButtons = () => {
   return (
     <Grid container style={style.GridStyle}>
-      <Grid>
+      <Grid item>
         <img src={Bootstrap} style={style.ButtonStyle} />
       </Grid>
       <Grid>

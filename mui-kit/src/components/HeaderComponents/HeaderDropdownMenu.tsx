@@ -7,26 +7,34 @@ import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 
 export default function DropDownMenu() {
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <Paper sx={{ width: 320, maxWidth: "100%" }}>
       <MenuList>
-        <MenuItem>
+        <MenuItem onClick={handleClose}>
           <ListItemText>Landing Pages</ListItemText>
         </MenuItem>
-        <MenuItem>
+        <MenuItem onClick={handleClose}>
           <ListItemText>About Us</ListItemText>
         </MenuItem>
-        <MenuItem>
+        <MenuItem onClick={handleClose}>
           <ListItemText>Contact Us</ListItemText>
         </MenuItem>
-        <MenuItem>
+        <MenuItem onClick={handleClose}>
           <ListItemText>Author</ListItemText>
         </MenuItem>
         <Divider />
-        <MenuItem>
+        <MenuItem onClick={handleClose}>
           <ListItemText>Account</ListItemText>
         </MenuItem>
-        <MenuItem>
+        <MenuItem onClick={handleClose}>
           <ListItemText>Sign In</ListItemText>
         </MenuItem>
       </MenuList>

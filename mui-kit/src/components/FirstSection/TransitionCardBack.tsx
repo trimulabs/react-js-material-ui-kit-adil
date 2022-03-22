@@ -23,11 +23,6 @@ const TextStyle = styled(Box)({
   padding: "20px",
 });
 
-const ButtonStyle = styled(Button)({
-  borderRadius: "10px",
-  color: theme.palette.primary.main,
-});
-
 interface Props {
   setIsFlipped: (isFlipped: boolean) => void;
 }

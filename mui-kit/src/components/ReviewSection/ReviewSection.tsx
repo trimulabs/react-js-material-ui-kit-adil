@@ -1,4 +1,4 @@
-import { Stack, Paper, Typography, Button } from "@mui/material";
+import { Stack, Paper, Typography, Button, Grid } from "@mui/material";
 import AccessTimeRoundedIcon from "@mui/icons-material/AccessTimeRounded";
 import Stars from "./StarComponent";
 
@@ -9,13 +9,9 @@ const style = {
     opacity: "1",
     display: "block",
   },
-  mainStack: {
-    paddingTop: "24px",
-    paddingLeft: "24px",
-    marginBottom: "64px",
-  },
   reviewPaper: {
     padding: "24px",
+    maxWidth: "80%",
   },
   starStyle: {
     color: "#7B809A",
@@ -35,8 +31,16 @@ const style = {
 };
 function Review() {
   return (
-    <Stack direction="row" style={style.mainStack}>
-      <Stack>
+    <Grid
+      sx={{
+        display: "flex",
+        paddingTop: "24px",
+        paddingLeft: "24px",
+        marginBottom: "64px",
+      }}
+      item
+    >
+      <Grid>
         <Paper elevation={0} style={style.reviewPaper}>
           <Typography
             variant="body1"
@@ -58,8 +62,8 @@ function Review() {
           </Typography>
           <Stars style={style.starStyle} />
         </Paper>
-      </Stack>
-      <Stack>
+      </Grid>
+      <Grid>
         <Paper
           style={style.reviewPaper}
           elevation={1}
@@ -76,7 +80,11 @@ function Review() {
           >
             Shailesh Kushwaha
           </Typography>
-          <Button variant="outlined" startIcon={<AccessTimeRoundedIcon />}>
+          <Button
+            variant="outlined"
+            startIcon={<AccessTimeRoundedIcon />}
+            disabled
+          >
             1 week ago
           </Button>
           <Typography style={style.reviewBody} sx={{ color: "#FFFFFF" }}>
@@ -86,8 +94,8 @@ function Review() {
           </Typography>
           <Stars style={style.starStyleCenter} />
         </Paper>
-      </Stack>
-      <Stack>
+      </Grid>
+      <Grid>
         <Paper elevation={0} style={style.reviewPaper}>
           <Typography
             variant="body1"
@@ -112,8 +120,8 @@ function Review() {
           </Typography>
           <Stars style={style.starStyle} />
         </Paper>
-      </Stack>
-    </Stack>
+      </Grid>
+    </Grid>
   );
 }
 

@@ -1,15 +1,16 @@
-import { Stack } from "@mui/material";
+import { Grid } from "@mui/material";
 import StarRoundedIcon from "@mui/icons-material/StarRounded";
+import Colors from "../../utils/Colors";
 
 function Stars(props: any) {
   return (
-    <Stack direction="row" spacing={0}>
-      <StarRoundedIcon />
-      <StarRoundedIcon />
-      <StarRoundedIcon />
-      <StarRoundedIcon />
-      <StarRoundedIcon />
-    </Stack>
+    <Grid sx={{ display: "flex" }}>
+      <StarRoundedIcon sx={{ color: Colors.primary.main }} />
+      <StarRoundedIcon sx={{ color: Colors.primary.main }} />
+      <StarRoundedIcon sx={{ color: Colors.primary.main }} />
+      <StarRoundedIcon sx={{ color: Colors.primary.main }} />
+      <StarRoundedIcon sx={{ color: Colors.primary.main }} />
+    </Grid>
   );
 }
 

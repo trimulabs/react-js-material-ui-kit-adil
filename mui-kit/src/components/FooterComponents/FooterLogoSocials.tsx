@@ -1,4 +1,3 @@
-import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -18,21 +17,21 @@ const style = {
 const FooterLogoSocials = () => {
   return (
     <Stack spacing={2} style={style.stackStyle}>
-      <IconButton>
+      <IconButton href="#">
         <Logo style={{ height: "32px", width: "32px" }} />
       </IconButton>
       <Typography align="center">Material Kit 2</Typography>
       <Stack direction="row" spacing={1}>
-        <IconButton aria-label="facebook">
+        <IconButton aria-label="facebook" href="www.facebook.com">
           <FacebookIcon />
         </IconButton>
-        <IconButton aria-label="twitter">
+        <IconButton aria-label="twitter" href="twitter.com">
           <TwitterIcon />
         </IconButton>
-        <IconButton aria-label="github">
+        <IconButton aria-label="github" href="github.com">
           <GitHubIcon />
         </IconButton>
-        <IconButton aria-label="youtube">
+        <IconButton aria-label="youtube" href="youtube.com">
           <YouTubeIcon />
         </IconButton>
       </Stack>

@@ -11,6 +11,7 @@ const TextStyle = styled(Box)({
   flexDirection: "column",
   margin: "auto",
   height: "100%",
+  color: "rgb(52, 71, 103)",
 });
 
 const Container = styled("div")({

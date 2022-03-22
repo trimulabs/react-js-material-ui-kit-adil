@@ -1,19 +1,30 @@
 import Features from "./Features";
 import KitFeatures from "./KitFeatures";
 import CardFlip from "./TransitionTile";
-import { Stack } from "@mui/material";
+import { Grid } from "@mui/material";
+import { styled } from "@mui/system";
+
 function FeaturesMain() {
+  const GridStyle = styled(Grid)(({ theme }) => ({
+    [theme.breakpoints.down("sm")]: {
+      display: "flex",
+      flexDirection: "column",
+    },
+    [theme.breakpoints.up("md")]: {
+      display: "flex",
+      flexDirection: "row",
+    },
+  }));
+
   return (
     <div>
       <Features />
-      <Stack
-        direction="row"
-        spacing={5}
-        sx={{ marginLeft: "100px", padding: "48px 0 48px 0" }}
-      >
-        <CardFlip />
-        <KitFeatures />
-      </Stack>
+      <GridStyle>
+        <Grid item>
+          <CardFlip />
+          <KitFeatures />
+        </Grid>
+      </GridStyle>
     </div>
   );
 }

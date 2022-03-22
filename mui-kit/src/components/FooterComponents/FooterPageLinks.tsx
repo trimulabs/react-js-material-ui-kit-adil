@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Button, Stack } from "@mui/material";
+import { Button, Link, Stack } from "@mui/material";
 import { Typography } from "@mui/material";
 import theme from "../../utils/Theme";
 
@@ -12,20 +12,10 @@ const style = {
   },
   buttonStyle: {
     fontSize: "14px",
-    textTransform: "none" as "none",
     color: "#344767",
-    backgroundColor: "transparent",
-    outline: "0",
-    border: "0",
-    margin: "0",
-    borderRadius: "0",
-    padding: "0px",
-    verticalAlign: "middle",
     fontFamily: '"Roboto","Helvetica","Arial",sans-serif',
     lineHeight: "1.75",
     letterSpacing: "0.02857em",
-    transition:
-      "background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
   },
 };
 
@@ -34,57 +24,57 @@ export default function FooterPageLinks() {
     <Stack direction="row" spacing={5}>
       <Stack style={style.stackStyle}>
         <Typography>Company</Typography>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          About Us
-        </Button>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          Freebies
-        </Button>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          Premium Tools
-        </Button>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          Blog
-        </Button>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"About Us"}
+        </Link>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"Freebies"}
+        </Link>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"Premium Tools"}
+        </Link>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"Blog"}
+        </Link>
       </Stack>
       <Stack style={style.stackStyle}>
         <Typography>Resources</Typography>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          Illustrations
-        </Button>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          Bits & Snippets
-        </Button>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          Affiliate Program
-        </Button>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"Illustrations"}
+        </Link>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"Bits & Snippets"}
+        </Link>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"Affiliate Program"}
+        </Link>
       </Stack>
       <Stack style={style.stackStyle}>
         <Typography>Help & Support</Typography>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          Contact Us
-        </Button>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          Knowledge Center
-        </Button>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          Custom Development
-        </Button>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          Sponsorship
-        </Button>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"Contact Us"}
+        </Link>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"Knowledge Center"}
+        </Link>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"Custom Development"}
+        </Link>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"Sponsorship"}
+        </Link>
       </Stack>
       <Stack style={style.stackStyle}>
         <Typography>Legal</Typography>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          Terms & Conditions
-        </Button>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          Privacy Policy
-        </Button>
-        <Button variant="text" color="secondary" style={style.buttonStyle}>
-          Licenses (EULA)
-        </Button>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"Terms & Conditions"}
+        </Link>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"Privacy Policy"}
+        </Link>
+        <Link href="#" underline="none" style={style.buttonStyle}>
+          {"Licenses (EULA)"}
+        </Link>
       </Stack>
     </Stack>
   );

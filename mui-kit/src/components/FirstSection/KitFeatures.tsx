@@ -1,4 +1,4 @@
-import { Icon, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import ContentCopyRoundedIcon from "@mui/icons-material/ContentCopyRounded";
 import FlipToFrontRoundedIcon from "@mui/icons-material/FlipToFrontRounded";
 import PriceChangeRoundedIcon from "@mui/icons-material/PriceChangeRounded";
@@ -10,9 +10,9 @@ const style = {
   },
   heading: {
     margin: "16px 0px 12px",
-    display: "block",
+    display: "flex",
+    flexWrap: "wrap" as "wrap",
     opacity: "1",
-    textTransform: "none" as "none",
     verticalAlign: "unset",
     textDecoration: "none",
     color: "rgb(52, 71, 103)",
@@ -20,12 +20,13 @@ const style = {
     fontWeight: "700",
   },
   body: {
-    margin: "0px",
     fontFamily: "Roboto, Helvetica, Arial, sans-serif",
     fontSize: "1rem",
     fontWeight: "300",
     lineHeight: "1.6",
-    display: "block",
+    display: "flex",
+    flexWrap: "wrap" as "wrap",
+    flex: "20%",
     paddingRight: "48px",
     paddingLeft: "0px",
     opacity: "1",
@@ -38,6 +39,9 @@ const style = {
   stackStyle: {
     paddingTop: "24px",
     paddingLeft: "24px",
+    display: "flex",
+    flexWrap: "wrap" as "wrap",
+    flex: "20%",
   },
 };
 function KitFeatures() {
